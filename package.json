@@ -1,0 +1,14 @@
+{
+  "name": "afraid-dns",
+  "version": "1.0.0",
+  "description": "Automatic DNS updater for afraid.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-wget": "^0.4.2"
+  }
+}
