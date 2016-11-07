@@ -1,11 +1,11 @@
 var wget = require('node-wget');
+var fs = require('fs');
 
 function updateIP() {
-	var URLs = [
-		"http://freedns.afraid.org/dynamic/update.php?token"
-	];
-	for (i = 0; i < URLs.length; i++) {
-		wget(URLs[i]);
+	var config = JSON.parse(fs.readFileSync("config.json"));
+	console.log(config.updateURLs);
+	for (i = 0; i < config.updateURLs.length; i++) {
+		wget(config.updateURLs[i]);
 	}
 }
 

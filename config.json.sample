@@ -1,0 +1,5 @@
+{
+    "updateURLs" : [
+		"http://freedns.afraid.org/dynamic/update.php?token"
+	]
+}
